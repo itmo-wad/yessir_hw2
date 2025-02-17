@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='update.css') }}">
+</head>
+<body class="profile">
+    <div class="container">
+        <div class="profile-left">
+            {% if photo == "default" %}
+                <img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="Profile Picture" class="profile-pic">
+            {% else %}
+                <img src="{{ url_for('static', filename=photo) }}" alt="Profile Picture" class="profile-pic">
+            {% endif %}
+            <h2>Hello, {{ session['username'] }}!</h2>
+            <p>Update your profile information below.</p>
+        </div>
+
+        <div class="profile-right">
+            <form action="{{ url_for('updateInfo') }}" method="POST" enctype="multipart/form-data">
+                <label for="city">City:</label>
+                <input type="text" name="city" value="{{ city }}" placeholder="Enter your city">
+
+                <label for="profession">Profession:</label>
+                <input type="text" name="profession" value="{{ profession }}" placeholder="Enter your profession">
+
+                <label for="photo">Profile Picture:</label>
+                <input type="file" name="photo">
+
+                <button type="submit">Update Profile</button>
+            </form>
+
+            <a href="{{ url_for('profile') }}"><button class="back-btn">Back to Profile</button></a>
+        </div>
+    </div>
+</body>
+</html>

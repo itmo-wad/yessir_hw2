@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e2f;
+    margin: 0;
+    color: #fff;
+}
+.profile {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ececf0;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background: #2a2a3a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.form {
+    margin: 5%;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #8bc6ec;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/*input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+*/
+button {
+    width: 100%;
+    padding: 10px;
+    background: #8bc6ec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    object-fit: cover;
+}
+.signup {
+    color: #fff;
+}
