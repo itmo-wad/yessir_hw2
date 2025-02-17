@@ -20,8 +20,8 @@ Ensure you have the following installed on your system:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/Yessir11/yessir_hw2_itmo_wad.git
-cd yessir_hw2_itmo_wad
+git clone https://github.com/itmo-wad/yessir_hw2.git
+cd yessir_hw2
 ```
 
 ### Create a Virtual Environment (Recommended)
